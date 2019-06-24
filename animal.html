@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Jk Style css -->
+  <link href="styles.css" rel="stylesheet">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand&display=swap" rel="stylesheet">
+
+
+  <title>Catalogo | KolitasUy!</title>
+
+</head>
+<!-- Fin head y metadata -->
+
+
+<header>
+
+  <!-- BARRA NAV -->
+
+  <nav className="navbar navbar-expand-lg navbar-dark fixed-top barrappal">
+    <a className="navbar-brand">
+      <img src="Assets/KolitasVector.png" className="logokolitas" alt="KolitasLogo">
+    </a>
+    <span className="navbar-brand mb-0 h1">KolitasUy!</span>
+
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarResponsive">
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item">
+          <a className="nav-link" href="#"><i className="fas fa-home" disabled></i> Inicio
+            <span className="sr-only">(current)</span>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="List.html"><i className="fas fa-list"></i> Catalogo</a>
+        </li>
+        <li className="nav-item ">
+          <a className="nav-link" href="animal.html"><i className="fas fa-paw"></i> Ficha</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link " href="NewAnimal.html"><i className="fas fa-plus-circle"></i> Registro</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href=""> <i className="fas fa-blog"></i> Blog</a>
+        </li>
+      </ul>
+      <div className="btn-group dropdown">
+        <button type="button" className="btn btn-secundary btn-sm dropdown-toggle nav-link" data-toggle="dropdown"
+          data-display="static" aria-haspopup="true" aria-expanded="false">
+          <i className="fas fa-user"></i>
+        </button>
+</div>
+</div>
+  </nav>
+
+</header>
+<!--FIN BARRA NAV-->
+
+<br>
+<br>
+<br>
+<!-- TARJETA -->
+<div className="container">
+  
+  <div className="card">
+    <br>
+      <h1><b>Firulay</b></h1>
+    <div className="container ficha">
+
+      <div className="row">
+        <div className="col-sm-8">
+          <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+            <div className="carousel-inner fichamascota">
+              <div className="carousel-item active">
+                <img src="Assets/firulay1.jpg" className="d-block w-100" alt="Firulay1">
+              </div>
+              <div className="carousel-item">
+                <img src="Assets/firulay3.jpg" className="d-block w-100" alt="Firulay3">
+              </div>
+
+            </div>
+            <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="col-sm-4 ficharegistro">
+
+          <div className="container Registro-animal">
+            <br>
+            <ul>
+              <li>
+                <h4><b>Tipo</b></h4>
+              </li>
+              <dd className="txt"></dd>Perro</dd>
+              <li>
+                <h4><b>Sexo</b></h4>
+              </li>
+              <dd className="txt">Hembra</dd>
+              <li>
+                <h4><b>Color de ojos y Pelo</b></h4>
+              </li>
+              <dd className="txt">Marron, Pelo Negro</dd>
+              <li>
+                <h4><b>Barrio</h4></b>
+              </li>
+              <dd className="txt">La blanqueada</dd>
+              <li>
+                <h4><b>Edad</b></h4>
+              </li>
+              <dd className="txt">5 años</dd>
+              <li>
+                <h4><b>Raza</b></h4>
+              </li>
+              <dd className="txt">Labrador Retriever</dd>
+            </ul>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      
+
+      <div className="card-body">
+
+        <p className="card-text"> Firulay está siendo criada en un hogar con otros perros medianos y le
+          encanta jugar con sus amigos y también le encanta jugar con sus juguetes para masticar y
+          animales de peluche. También disfruta de sus paseos y de ser abrazado por su madre adoptiva.
+
+          Esta niña será genial en un hogar con otro perro pequeño, pero también puede estar en un solo
+          perro si su persona está en casa con bastante frecuencia o trabaja desde casa. </p>
+
+
+        <a href="#" className="btn btn-block btn-search">Adoptar</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- FIN TARJETA -->
+<br>
+<br>
+<br>
+<!-- FOOTER -->
+<footer className="py-5 footerkolitas">
+    <div className="container">
+      <p className="m-0 text-center nav-item">Copyright &copy; Derechos registrados, creador Jose Kulzi  <i className="fab fa-facebook"></i> <i className="fab fa-instagram"></i> <i className="fab fa-twitter"></i></p>
+    </div>
+  </footer>
+<!-- FIN FOOTER -->
+</body>
+
+</html>

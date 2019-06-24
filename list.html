@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Jk Style css -->
+  <link href="styles.css" rel="stylesheet">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand&display=swap" rel="stylesheet">
+
+
+  <title>Catalogo | KolitasUy!</title>
+
+</head>
+<!-- Fin head y metadata -->
+
+
+<header>
+
+  <!-- BARRA NAV -->
+
+  <nav className="navbar navbar-expand-lg navbar-dark fixed-top barrappal">
+    <a className="navbar-brand">
+      <img src="Assets/KolitasVector.png" className="logokolitas" alt="KolitasLogo">
+    </a>
+    <span className="navbar-brand mb-0 h1">KolitasUy!</span>
+
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarResponsive">
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item">
+          <a className="nav-link" href="#"><i className="fas fa-home" disabled></i> Inicio
+            <span className="sr-only">(current)</span>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="List.html"><i className="fas fa-list"></i> Catalogo</a>
+        </li>
+        <li className="nav-item ">
+          <a className="nav-link" href="animal.html"><i className="fas fa-paw"></i> Ficha</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link " href="NewAnimal.html"><i className="fas fa-plus-circle"></i> Registro</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href=""> <i className="fas fa-blog"></i> Blog</a>
+        </li>
+      </ul>
+      <div className="btn-group dropdown">
+        <button type="button" className="btn btn-secundary btn-sm dropdown-toggle nav-link" data-toggle="dropdown"
+          data-display="static" aria-haspopup="true" aria-expanded="false">
+          <i className="fas fa-user"></i>
+        </button>
+</div>
+</div>
+  </nav>
+
+</header>
+<!--FIN BARRA NAV-->
+
+<body>
+
+  <br>
+  <br>
+  <!-- CARRUSEL -->
+
+  <div className="container">
+    <div className="col-lg-12">
+
+      <div id="carouselExampleIndicators" className="carousel slide my-4 carrusel" data-ride="carousel">
+        <ol className="carousel-indicators carrusel">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img className="d-block img-fluid dog-banner carrusel"
+              src="https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/11/16/Recortada/img_cperezg_20171116-123107_imagenes_lv_terceros_istock-685469924-kqOH-U432920756498MzF-992x558@LaVanguardia-Web.jpg"
+              alt="First slide">
+          </div>
+          <div className="carousel-item">
+            <img className="d-block img-fluid dog-banner carrusel"
+              src="https://www.dogalize.com/wp-content/uploads/2016/11/Perros-en-adopcion-adoptar-adopta-mascota.jpg"
+              alt="Second slide">
+          </div>
+          <div className="carousel-item">
+            <img className="d-block img-fluid dog-banner carrusel"
+              src="http://www.universalmedios.com.ar/wp-content/uploads/2018/07/perro-1.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- FIN CARRUSEL -->
+      <br>
+      <br>
+      <!-- FILTROS -->
+      <section className="search-sec">
+        <div className="container">
+          <form>
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="row">
+                  <div className="col-lg-2 col-md-3 col-sm-12 p-0 filters">
+                    <select className="form-control-filter filter " id="FiltroEdad">
+                      <div className="filter-group">
+                        <option disabled selected>Edad</option>
+                        <option>0-1</option>
+                        <option>2-5</option>
+                        <option>6-9</option>
+                        <option>8-12</option>
+                        <option>13-16</option>
+                        <option>17 o mas</option>
+                      </div>
+                    </select>
+                  </div>
+
+                  <div className="col-lg col-md-3 col-sm-12 p-0 filters">
+                    <select className="form-control-filter filter" id="FiltroTipo">
+                      <option disabled selected>Tipo</option>
+                      <option>Perro</option>
+                      <option>Gato</option>
+                      <option>Aves</option>
+                      <option>Reptiles</option>
+                      <option>Peces</option>
+                      <option>todas las opciones</option>
+                      <option>Vaca</option>
+                    </select>
+                  </div>
+
+                  <div className="col-lg col-md-3 col-sm-12 p-0 filters">
+                    <select className="form-control-filter filter" id="FiltroRaza">
+                      <option disabled selected>Raza</option>
+                      <option>Beagle</option>
+                      <option>bulldog</option>
+                      <option>Golden</option>
+                      <option>chihuaua</option>
+                      <option>Puddle</option>
+                      <option>Sin especificar</option>
+                    </select>
+                  </div>
+
+                  <div className="col-lg col-md-3 col-sm-12 p-0 filters">
+                    <select className="form-control-filter filter" id="FiltroNombre">
+                      <option disabled selected>Nombre</option>
+                      <option>Blanca</option>
+                      <option>Candy</option>
+                      <option>Pinky</option>
+                      <option>Enzo</option>
+                      <option>Brownie</option>
+                      <option>Vicente</option>
+                      <option>Sin nombre</option>
+                      
+                    </select>
+                  </div>
+
+                  <div className="col-lg col-md-3 col-sm-12 p-0 filters">
+                    <select className="form-control-filter filter" id="FiltroBarrio">
+                      <option disabled selected>Barrio</option>
+                      <option>La Blanqueada</option>
+                      <option>Pocitos</option>
+                      <option>parque Battle</option>
+                      <option>Centro</option>
+                      <option>Buceo</option>
+                      <option>Todos</option>
+                    </select>
+                  </div>
+
+                  <div className="col-lg-2 col-md-3 col-sm-12 p-0 filters">
+                    <select className="form-control-filter filter" id="FiltroPelo">
+                      <option disabled selected>Color de pelo</option>
+                      <option>blanco</option>
+                      <option>Negro</option>
+                      <option>Marron</option>
+                      <option>Beige</option>
+                      <option>con manchas</option>
+                      <option>Todos</option>
+                    </select>
+                  </div>
+
+                  <div className="col-lg-1 col-md-3 col-sm-12 p-0 filters">
+                    <button type="reset" className="btn btn-search ">Filtrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+    </section>
+    <!-- FIN FILTROS -->
+    <br>
+    <br>
+<!-- TARJETAS MASCOTAS -->
+    <div className="row">
+      <div className="col-lg-3 col-md-6 mb-4 filter Golden Perro">
+        <div className="card h-100">
+          <a href="animal.html"><img className="card-img-top" src="Assets/pinky.jpeg" alt="FotoPinky"></a>
+          <div className="card-body">
+            <h4 className="card-title">
+              <a href="animal.html" className="cardname">Pinky</a>
+            </h4>
+            <p className="card-text">Perrito &#x2022 Hembra &#x2022 Medio &#x2022 Negro
+            </p>
+          </div>
+          <div className="card-footer">
+            <input className="btn btn-sm btn-block btn-search" type="submit" value="saber mas">
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-6 mb-4">
+        <div className="card h-100">
+          <a href="animal.html"><img className="card-img-top" src="Assets/brownie.jpeg" alt="FotoBrownie"></a>
+          <div className="card-body">
+            <h4 className="card-title">
+              <a href="animal.html" className="cardname">Brownie</a>
+            </h4>
+            <p className="card-text"> perrito &#x2022 Joven &#x2022 Hembra &#x2022 Medio
+            </p>
+          </div>
+          <div className="card-footer">
+            <input className="btn btn-sm btn-block btn-search" type="submit" value="saber mas"
+              href="animal.html">
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-6 mb-4">
+        <div className="card h-100">
+          <a href="animal.html"><img className="card-img-top" src="Assets/dog_3.jpg" alt="FotoBlanca"></a>
+          <div className="card-body">
+            <h4 className="card-title">
+              <a href="animal.html" className="cardname">Blanca</a>
+            </h4>
+            <p className="card-text">Perrito &#x2022 Hembra &#x2022 Pequeña &#x2022 Blanco con Marron
+            </p>
+          </div>
+          <div className="card-footer">
+            <input className="btn btn-sm btn-block btn-search" type="submit" value="saber mas"
+              href="animal.html">
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-3 col-md-6 mb-4">
+        <div className="card h-100">
+          <a href="animal.html"><img className="card-img-top" src="Assets/enzo.jpeg" alt="FotoGolde "></a>
+          <div className="card-body">
+            <h4 className="card-title">
+              <a href="animal.html" className="cardname">Enzo</a>
+            </h4>
+
+            <p className="card-text">Perrito &#x2022 Macho &#x2022 Pequeña &#x2022 Negro y Blanco
+            </p>
+          </div>
+          <div className="card-footer">
+            <input className="btn btn-sm btn-block btn-search" type="submit" value="saber mas">
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-6 mb-4">
+        <div className="card h-100">
+          <a href="animal.html"><img className="card-img-top" src="Assets/vicente.png" alt="FotoVicente"></a>
+          <div className="card-body">
+            <h4 className="card-title">
+              <a href="animal.html" className="cardname">Vicente</a>
+            </h4>
+            <p className="card-text">Vaca &#x2022 Masculino &#x2022 Grande &#x2022 Negro y Blanco
+            </p>
+          </div>
+          <div className="card-footer">
+            <input className="btn btn-sm btn-block btn-search" type="submit" value="saber mas">
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-6 mb-4">
+        <div className="card h-100">
+          <a href="animal.html"><img className="card-img-top" src="Assets/candy.jpeg" alt="FotoCandy"></a>
+          <div className="card-body">
+            <h4 className="card-title">
+              <a href="animal.html" className="cardname">Candy</a>
+            </h4>
+            <p className="card-text"> Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco
+            </p>
+          </div>
+          <div className="card-footer">
+            <input className="btn btn-sm btn-block btn-search" type="submit" value="saber mas">
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 mb-4">
+          <div className="card h-100">
+            <a href="animal.html"><img className="card-img-top" src="Assets/firulay1.jpg" alt="FotoFirulay"></a>
+            <div className="card-body">
+              <h4 className="card-title">
+                <a href="animal.html" className="cardname">Firulay</a>
+              </h4>
+              <p className="card-text">Perrito &#x2022 Joven &#x2022 Hembra &#x2022 Negro &#x2022 Mediana
+              </p>
+            </div>
+            <div className="card-footer">
+              <input className="btn btn-sm btn-block btn-search" type="submit" value="saber mas"
+                href="animal.html">
+            </div>
+          </div>
+        </div>
+    </div> 
+    
+</div>
+<!-- FIN TARJETAS MASCOTAS -->
+
+<!-- FOOTER -->
+  <footer className="py-5 footerkolitas">
+    <div className="container">
+      <p className="m-0 text-center nav-item">Copyright &copy; Derechos registrados, creador Jose Kulzi  <i className="fab fa-facebook"></i> <i className="fab fa-instagram"></i> <i className="fab fa-twitter"></i></p>
+    </div>
+  </footer>
+<!-- FIN FOOTER -->
+
+
+</body>
+
+</html>

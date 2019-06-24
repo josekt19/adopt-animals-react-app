@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Jk Style css -->
+  <link href="styles.css" rel="stylesheet">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand&display=swap" rel="stylesheet">
+
+
+  <title>Catalogo | KolitasUy!</title>
+
+</head>
+<!-- Fin head y metadata -->
+
+
+<header>
+
+  <!-- BARRA NAV -->
+
+  <nav className="navbar navbar-expand-lg navbar-dark fixed-top barrappal">
+    <a className="navbar-brand">
+      <img src="Assets/KolitasVector.png" className="logokolitas" alt="KolitasLogo">
+    </a>
+    <span className="navbar-brand mb-0 h1">KolitasUy!</span>
+
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarResponsive">
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item">
+          <a className="nav-link" href="#"><i className="fas fa-home" disabled></i> Inicio
+            <span className="sr-only">(current)</span>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="List.html"><i className="fas fa-list"></i> Catalogo</a>
+        </li>
+        <li className="nav-item ">
+          <a className="nav-link" href="animal.html"><i className="fas fa-paw"></i> Ficha</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link " href="NewAnimal.html"><i className="fas fa-plus-circle"></i> Registro</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href=""> <i className="fas fa-blog"></i> Blog</a>
+        </li>
+      </ul>
+      <div className="btn-group dropdown">
+        <button type="button" className="btn btn-secundary btn-sm dropdown-toggle nav-link" data-toggle="dropdown"
+          data-display="static" aria-haspopup="true" aria-expanded="false">
+          <i className="fas fa-user"></i>
+        </button>
+</div>
+</div>
+  </nav>
+
+</header>
+<!--FIN BARRA NAV-->
+
+<br>
+<br>
+<br>
+<!-- REGISTRO -->
+<h2>Registro de nuevo animal</h2>
+<br>
+<div className="container Registro">
+
+  <br>
+  <br>
+  <h2>Datos de mascota</h2>
+  <br>
+  <form>
+    <div className="form-row">
+      <div className="form-group col-md-6">
+        <label for="animaltype">Tipo de animal</label>
+        <input type="text" className="form-control" id="animaltype" placeholder="Tipo de animal">
+      </div>
+      <div className="form-group col-md-6">
+        <label for="name">Nombre de animal</label>
+        <input type="text" className="form-control" id="animalname" placeholder="Opcional">
+      </div>
+
+      <div className="form-group col-md-6">
+        <label for="inputAddress">Barrio</label>
+        <input type="text" className="form-control" id="inputAddress" placeholder="Ingrese direccion">
+      </div>
+      <div className="form-group col-md-6">
+        <label for="inputRaza">Raza</label>
+        <input type="text" className="form-control" id="Raza" placeholder="Raza">
+      </div>
+    </div>
+    <div className="form-row">
+      <div className="form-group col-md-6">
+        <label for="inputEdad">Edad</label>
+        <input type="text" className="form-control" id="Edad" placeholder="Edad">
+      </div>
+      <div className="form-group col-md-4">
+        <label for="inputSexo">Sexo</label>
+        <select id="inputSexo" className="form-control" placeholder="Sexo">
+          <option selected disabled>Seleccione Sexo</option>
+          <option>Macho</option>
+          <option>Hembra</option>
+        </select>
+      </div>
+      <div className="form-group col-md-2">
+        <label for="inputColor">Color de Pelo y ojos</label>
+        <input type="text" className="form-control" id="inputColor">
+      </div>
+
+      <div className="form-group col-md-12">
+        <label for="inputDescripcion">Descripcion</label>
+        <textarea className="form-control" aria-label="With textarea"></textarea>
+      </div>
+    </div>
+    <div className="input-group mb-3">
+      <div className="input-group-prepend">
+        <span className="input-group-text" id="inputGroupFileAddon01">Cargar imagen</span>
+      </div>
+      <div className="custom-file">
+        <input type="file" className="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+        <label className="custom-file-label" for="inputGroupFile01">Cargar Imagen</label>
+      </div>
+    </div>
+    <section className="contacto">
+      <br>
+      <h2>Datos de contacto</h2>
+    </section>
+    <form>
+      <div className="form-row">
+        <div className="form-group col-md-4">
+          <label for="contacto">Nombre y apellido</label>
+          <input type="text" className="form-control" id="ContactName" placeholder="Nombre de contacto">
+        </div>
+        <div className="form-group col-md-4">
+          <label for="telefo">Telefono de contacto</label>
+          <input type="tel" className="form-control" id="ContactTel" placeholder="ingrese Telefono"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+          <span className="note">Formato: 09x123456</span>
+        </div>
+        <div className="form-group col-md-4">
+          <label for="Email">Email</label>
+          <input type="Email" className="form-control" id="ContactEmail" placeholder="Email">
+        </div>
+
+
+
+      </div>
+      <br>
+      <button type="submit" className="btn btn-lg btn-block btn-search">Registrar nueva adopcion</button>
+    </form>
+    <br>
+
+</div>
+
+<br>
+<br>
+<br>
+</div>
+</div>
+</div>
+</div>
+<!-- FIN REGISTRO -->
+
+
+<!-- FOOTER -->
+<footer className="py-5 footerkolitas">
+    <div className="container">
+      <p className="m-0 text-center nav-item">Copyright &copy; Derechos registrados, creador Jose Kulzi  <i className="fab fa-facebook"></i> <i className="fab fa-instagram"></i> <i className="fab fa-twitter"></i></p>
+    </div>
+  </footer>
+<!-- FIN FOOTER -->
+
+
+</body>
+
+</html>
