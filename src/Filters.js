@@ -13,21 +13,22 @@ class Filters extends React.Component {
               <div className="row">
                 <div className="col-lg-2 col-md-3 col-sm-12 p-0 filters">
                   <select className="form-control-filter filter " id="FiltroEdad">
-                    <div className="filter-group">
-                      <option disabled selected>Edad</option>
+                    
+                      <option disabled defaultValue>Edad</option>
                       <option>0-1</option>
                       <option>2-5</option>
                       <option>6-9</option>
                       <option>8-12</option>
                       <option>13-16</option>
                       <option>17 o mas</option>
-                    </div>
+                    
                   </select>
                 </div>
 
+
                 <div className="col-lg col-md-3 col-sm-12 p-0 filters">
                   <select className="form-control-filter filter" id="FiltroTipo">
-                    <option disabled selected>Tipo</option>
+                    <option disabled defaultValue>Tipo</option>
                     <option>Perro</option>
                     <option>Gato</option>
                     <option>Aves</option>
@@ -40,7 +41,7 @@ class Filters extends React.Component {
 
                 <div className="col-lg col-md-3 col-sm-12 p-0 filters">
                   <select className="form-control-filter filter" id="FiltroRaza">
-                    <option disabled selected>Raza</option>
+                    <option disabled defaultValue>Raza</option>
                     <option>Beagle</option>
                     <option>bulldog</option>
                     <option>Golden</option>
@@ -52,13 +53,13 @@ class Filters extends React.Component {
 
                 <div className="col-lg col-md-3 col-sm-12 p-0 filters">
                   <select className="form-control-filter filter" id="FiltroNombre">
-                    <option disabled selected>Nombre</option>
+                    <option disabled defaultValue>Nombre</option>
                     <option>Blanca</option>
                     <option>Candy</option>
                     <option>Pinky</option>
                     <option>Enzo</option>
                     <option>Brownie</option>
-                    <option>Vicente</option>
+                    <option>Gla</option>
                     <option>Sin nombre</option>
                     
                   </select>
@@ -66,7 +67,7 @@ class Filters extends React.Component {
 
                 <div className="col-lg col-md-3 col-sm-12 p-0 filters">
                   <select className="form-control-filter filter" id="FiltroBarrio">
-                    <option disabled selected>Barrio</option>
+                    <option disabled defaultValue>Barrio</option>
                     <option>La Blanqueada</option>
                     <option>Pocitos</option>
                     <option>parque Battle</option>
@@ -78,7 +79,7 @@ class Filters extends React.Component {
 
                 <div className="col-lg-2 col-md-3 col-sm-12 p-0 filters">
                   <select className="form-control-filter filter" id="FiltroPelo">
-                    <option disabled selected>Color de pelo</option>
+                    <option disabled defaultValue>Color de pelo</option>
                     <option>blanco</option>
                     <option>Negro</option>
                     <option>Marron</option>

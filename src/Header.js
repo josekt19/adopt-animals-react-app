@@ -2,13 +2,11 @@ import React from 'react';
 import './App.css';
 
 
+
 class Header extends React.Component {
   render() {
     return (
       <header>
-
-
-
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top barrappal">
           <a className="navbar-brand">
             <img src="Assets/KolitasVector.png" className="logokolitas" alt="KolitasLogo" />
@@ -22,18 +20,16 @@ class Header extends React.Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#"><i className="fas fa-home" disabled></i> Inicio
+                <a className="nav-link" href="#home" onClick={this.props.gotoListAnimals}><i className="fas fa-home"></i> Inicio
           <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="List.html"><i className="fas fa-list"></i> Catalogo</a>
+                <a className="nav-link" href="#home" onClick={this.props.goToListAnimals}><i className="fas fa-list"></i> Catalogo</a>
               </li>
-              <li className="nav-item ">
-                <a className="nav-link" href="animal.html"><i className="fas fa-paw"></i> Ficha</a>
-              </li>
+              
               <li className="nav-item">
-                <a className="nav-link " href="NewAnimal.html"><i className="fas fa-plus-circle"></i> Registro</a>
+                <a className="nav-link " href="#register" onClick={this.props.goToRegister}><i className="fas fa-plus-circle"></i> Registro</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href=""> <i className="fas fa-blog"></i> Blog</a>

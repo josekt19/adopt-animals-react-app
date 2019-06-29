@@ -1,91 +1,103 @@
 import React from 'react';
-import './App.css';
-import Header from './Header'
-import Footer from './Footer';
-import Carrousel from './Carrousel';
-import Filters from './Filters';
-import AnimalItem from './AnimalItem';
+import Header from './Header.js';
+import Footer from './Footer.js';
+import Animal from './Animal.js';
+import ListAnimal from './ListAnimal.js';
+import Register from './Register.js';
 
+
+import { baseAnimals } from './baseAnimals.json';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      AnimalsList: [
-        {
-          Imagen: "Assets/pinky.jpeg",
-          name: "Pinky",
-          sexo: "Hembra",
-          edad: "5 años",
-          descripcion: "Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco",
-        },
-      {
-        Imagen: "Assets/brownie.jpeg",
-        name: "Brownie",
-        sexo: "Macho",
-        edad: "2 años",
-        descripcion: "Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco",
-      },
-      {
-        Imagen: "Assets/dog_3.jpg",
-        name: "Blanca",
-        sexo: "Hembra",
-        edad: "1 año",
-        descripcion: "Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco",
-      },
-      {
-        Imagen: "Assets/enzo.jpeg",
-        name: "Enzo",
-        sexo: "Macho",
-        edad: "3 años",
-        descripcion: "Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco",
-      },
-      {
-        Imagen: "Assets/gladys.png",
-        name: "Gladys",
-        sexo: "Hembra",
-        edad: "7 años",
-        descripcion: "Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco",
-      },
-      {
-        Imagen: "Assets/candy.jpeg",
-        name: "Candy",
-        sexo: "Hembra",
-        edad: "9 años",
-        descripcion: "Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco",
-      },
-      {
-        Imagen: "Assets/firulay1.jpg",
-        name: "Firulay",
-        sexo: "Hembra",
-        edad: "6 años",
-        descripcion: "Gato &#x2022 Adulto &#x2022 Hembra &#x2022 Pequeña &#x2022 Naranja y blanco",
-      },
-
-      ]
-      
+      section: 2,
+      currentAnimal:0,
+      baseAnimals
     };
-    
+    this.handleAddAnimal = this.handleAddAnimal.bind(this);
   }
 
-  
+  handleAddAnimal(animalitem) {
+    this.setState({
+      baseAnimals: [...this.state.baseAnimals, animalitem]
+    });
+    console.log(animalitem);
+  }
+
+   /*handleFavorite(animalitem) {
+    this.setState({
+    });
+  }*/
+
+  goToListAnimals = () => {
+    this.setState({
+      section: 1
+    });
+  }
+
+  goToRegister = () => {
+    this.setState({
+      section: 2
+    });
+  }
+
+  goToFavorites = () => {
+    this.setState({
+      section: 3
+    });
+  }
+  goToAnimal = (e) => {
+    this.setState({
+      section: 5,
+      currentAnimal: e
+      
+    });
+  }
+
+  goToBlog = () => {
+    this.setState({
+      section: 4
+    });
+  }
+
+  currentSection() {
+    if (this.state.section === 1) {
+      return <ListAnimal 
+      goToAnimal={this.goToAnimal}
+      animals={this.state.baseAnimals} />;
+    }
+
+    if (this.state.section === 2) {
+      return <Register 
+      onAddAnimal={this.handleAddAnimal}/>;
+    }
+
+    
+
+    
+
+    if (this.state.section === 5) {
+      return <Animal animalItem ={this.state.baseAnimals.find(item =>item.id===this.state.currentAnimal)}/>;
+    }
+  }
+
 
   render() {
-    return (
-      <div>
-        <Header />
-        <Carrousel />
-        <Filters />
-        
-          <div className="row">
 
-            {this.state.AnimalsList.map(item => <AnimalItem animal={item} key={item.name} />)}
-          </div>
-        <form />
+    return (
+      <main>
+        <Header 
+        goToListAnimals={this.goToListAnimals}
+        goToRegister={this.goToRegister}
+        goToFavorites={this.goToFavorites}
+        goToBlog= {this.goToBlog}
+        />
+        {this.currentSection()}
         <Footer />
 
-
-      </div>
+      </main>
     );
   }
 }
